@@ -14,11 +14,11 @@
             }
             let a = prompt("enter the length of the string");
             document.write(`the string of length ${a} are : `)
-            for(let i=0;i<arr.length;i++){
-                if(arr[i].length == a){
-                    document.write("<br>",arr[i])
+            arr.map(e => {
+                if(e.length == a){
+                    document.write("<br>",e)
                 }
-            }
+            })
         }
 
     </script>
