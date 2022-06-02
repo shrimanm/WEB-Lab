@@ -5,8 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script >
+        let fun = () =>{
+            let arr = new Array();
+            let l =  prompt("enter the total number of strings")
+            for(let j=0;j<l;j++){
+                arr.push(prompt(`enter the string ${j}`))
+            }
+            let a = prompt("enter the length of the string");
+            document.write(`the string of length ${a} are : `)
+            for(let i=0;i<arr.length;i++){
+                if(arr[i].length == a){
+                    document.write("<br>",arr[i])
+                }
+            }
+        }
+
+    </script>
 </head>
 <body>
-    
+    <form>
+        <button onclick={fun()}>click here</button>
+    </form>
 </body>
 </html>
